@@ -1,0 +1,41 @@
+.menuItem {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.container {
+  position: sticky;
+  top: 0;
+  background-color: rgb(40, 59, 77);
+  height: 100px;
+  z-index: 10;
+}
+.topBarConteiner {
+  background-color: rgb(40, 59, 77);
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  display: flex;
+  max-width: 1024px;
+  margin: auto;
+}
+.logo {
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+.menu {
+  justify-content: space-between;
+  display: flex;
+}
+.menuSicialMediaItem {
+  font-size: 16px;
+  color: rgb(252, 252, 255);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
