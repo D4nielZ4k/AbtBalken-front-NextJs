@@ -2,13 +2,16 @@ import styles from "./Topbar.module.css";
 import Image from "next/image";
 import logo from "../../assets/logga.png";
 import "font-awesome/css/font-awesome.min.css";
+import Link from "next/link";
 
 export default function Topbar() {
   return (
     <div className={styles.container}>
       <div className={styles.topBarConteiner}>
         <div className={styles.logo}>
-          <Image src={logo} alt="Picture of the author" />
+          <Link href="/">
+            <Image src={logo} alt="Picture of the author" />
+          </Link>
         </div>
 
         <div className={styles.menu}>
@@ -26,7 +29,7 @@ export default function Topbar() {
             <a href="https://www.google.com">Offertförfrågan</a>
           </div>
           <div className={styles.menuItem}>
-            <a href="https://www.google.com">Kontakta oss</a>
+            <Link href="/contact">Kontakt oss</Link>
           </div>
           <div className={styles.menu}>
             <div className={styles.menuSicialMediaItem}>
